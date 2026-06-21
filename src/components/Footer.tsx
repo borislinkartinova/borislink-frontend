@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="mt-8 pt-4 border-t border-[var(--border)] flex justify-between text-xs text-[var(--text-muted)]">
+      <div className="mt-8 pt-4 border-t border-[var(--border)] flex flex-col md:flex-row md:justify-between gap-2 text-xs text-[var(--text-muted)]">
         <div>© 2026 Boris Link. Tous droits réservés.</div>
         <div>Construit en public. Mis à jour chaque semaine.</div>
       </div>
