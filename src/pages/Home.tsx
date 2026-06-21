@@ -7,14 +7,50 @@ export default function Home() {
 
   useEffect(() => {
     async function loadPosts() {
+      const url =
+        "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?per_page=5";
+
       try {
-        const res = await fetch(
-          "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?per_page=5"
-        );
+        console.log("📡 FETCH URL:", url);
+
+        const res = await fetch(url);
+
+        console.log("📊 STATUS:", res.status);
+        console.log("📊 OK:", res.ok);
+
+        const contentType = res.headers.get("content-type");
+        console.log("📦 CONTENT-TYPE:", contentType);
+
+        // ❌ HTTP error (403, 500, etc.)
+        if (!res.ok) {
+          const text = await res.text();
+          console.error("❌ API ERROR BODY:", text);
+          setPosts([]);
+          return;
+        }
+
+        // ⚠️ ensure JSON response
+        if (!contentType || !contentType.includes("application/json")) {
+          const text = await res.text();
+          console.error("❌ NON-JSON RESPONSE:", text);
+          setPosts([]);
+          return;
+        }
+
         const data = await res.json();
+
+        console.log("✅ DATA RECEIVED:", data);
+
+        if (!Array.isArray(data)) {
+          console.warn("⚠️ DATA IS NOT AN ARRAY:", data);
+          setPosts([]);
+          return;
+        }
+
         setPosts(data);
       } catch (e) {
-        console.error("Error loading posts", e);
+        console.error("🔥 FETCH ERROR:", e);
+        setPosts([]);
       }
     }
 
