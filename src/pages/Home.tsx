@@ -9,7 +9,7 @@ export default function Home() {
     async function loadPosts() {
       try {
         const res = await fetch(
-          "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?_fields=id,title,excerpt,date,slug,acf&per_page=5"
+          "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?per_page=5"
         );
         const data = await res.json();
         setPosts(data);
