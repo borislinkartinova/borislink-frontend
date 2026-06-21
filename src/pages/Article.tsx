@@ -1,5 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { journalPosts } from "../content/journal";
 
 export default function Article() {
@@ -42,12 +44,11 @@ export default function Article() {
       </div>
 
       {/* CONTENT */}
-      <div
-        className="article-content mt-10 text-[var(--text)] leading-relaxed"
-        dangerouslySetInnerHTML={{
-          __html: post.content
-        }}
-      />
+      <div className="article-content mt-10 text-[var(--text)] leading-relaxed">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {post.content}
+        </ReactMarkdown>
+      </div>
 
       <Footer />
     </div>
