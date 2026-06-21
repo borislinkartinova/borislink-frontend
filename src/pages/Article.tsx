@@ -5,28 +5,39 @@ import Footer from "../components/Footer";
 export default function Article() {
   const { slug } = useParams();
   const [post, setPost] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     async function loadPost() {
       try {
+        setLoading(true);
+        setError(false);
+
         const res = await fetch(
-          `https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?slug=${slug}&_fields=id,title,content,date`
+          `https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?slug=${slug}`
         );
 
         const data = await res.json();
 
         if (Array.isArray(data) && data.length > 0) {
           setPost(data[0]);
+        } else {
+          console.error("Post not found for slug:", slug);
+          setError(true);
         }
       } catch (e) {
         console.error("Error loading post", e);
+        setError(true);
+      } finally {
+        setLoading(false);
       }
     }
 
     loadPost();
   }, [slug]);
 
-  if (!post) {
+  if (loading) {
     return (
       <div className="max-w-2xl mx-auto py-16 text-[var(--text-muted)]">
         Loading...
@@ -34,8 +45,24 @@ export default function Article() {
     );
   }
 
+  if (error || !post) {
+    return (
+      <div className="max-w-2xl mx-auto py-16">
+        <Link to="/journal" className="text-[var(--accent)] hover:underline">
+          ← Retour au journal
+        </Link>
+
+        <p className="mt-6 text-[var(--text-muted)]">
+          Article introuvable.
+        </p>
+
+        <Footer />
+      </div>
+    );
+  }
+
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto py-16">
 
       {/* BACK */}
       <Link
@@ -57,12 +84,14 @@ export default function Article() {
 
       {/* CONTENT */}
       <div
-        className="article-content mt-10"
+        className="article-content mt-10 text-[var(--text)] leading-relaxed"
         dangerouslySetInnerHTML={{
-          __html: post.content?.rendered
+          __html: post.content?.rendered || ""
         }}
       />
+
       <Footer />
+
     </div>
   );
 }
