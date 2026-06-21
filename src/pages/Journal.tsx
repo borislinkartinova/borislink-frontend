@@ -75,7 +75,7 @@ export default function Journal() {
             slug={post.slug}
             index={(index + 1).toString().padStart(2, "0")}
             title={post.title}
-            excerpt={post.excerpt || ""}
+            excerpt={post.excerpt || post.content?.split("\n")[0] || ""}
             category={post.category || "ARTINOVA"}
             date={new Date(post.date).toLocaleDateString("en-GB", {
               day: "2-digit",
