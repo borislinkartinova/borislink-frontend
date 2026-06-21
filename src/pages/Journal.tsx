@@ -1,26 +1,10 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { journalPosts } from "../content/journal";
 
 export default function Journal() {
-  const posts = [
-    {
-      id: 18,
-      date: "2026-06-20T16:48:03",
-      slug: "test-article",
-      title: {
-        rendered: "Pourquoi je lance Boris Link (et la construction d’Artinova en public)"
-      },
-      excerpt: {
-        rendered: "<p>Je documente la construction d’Artinova et mon parcours entrepreneurial.</p>"
-      },
-      acf: {
-        summary: "Je lance Boris Link pour documenter la construction d’Artinova.",
-        category: "ARTINOVA",
-        reading_time: "7"
-      }
-    }
-  ];
+  const posts = journalPosts;
   const [selectedCategory, setSelectedCategory] = useState<string>("TOUT");
 
   const categories = useMemo(() => {
@@ -91,9 +75,9 @@ export default function Journal() {
             key={post.id}
             slug={post.slug}
             index={(index + 1).toString().padStart(2, "0")}
-            title={post.title?.rendered}
-            excerpt={(post.acf?.summary || post.excerpt?.rendered || "").replace(/<[^>]*>/g, "")}
-            category={post.acf?.category || "ARTINOVA"}
+            title={post.title}
+            excerpt={(post.excerpt || "").replace(/<[^>]*>/g, "")}
+            category={"ARTINOVA"}
             date={new Date(post.date).toLocaleDateString("en-GB", {
               day: "2-digit",
               month: "short",

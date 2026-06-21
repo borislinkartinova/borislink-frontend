@@ -1,69 +1,9 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import { journalPosts } from "../content/journal";
 
 export default function Home() {
-  const [posts, setPosts] = useState<any[]>([]);
-
-  useEffect(() => {
-    async function loadPosts() {
-      const url =
-        "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?per_page=5";
-
-      try {
-        console.log("📡 FETCH URL:", url);
-
-        // GET request (with credentials included)
-        const res = await fetch(url, {
-          method: "GET",
-          credentials: "include",
-        });
-
-        console.log("📊 STATUS:", res.status);
-        console.log("📊 OK:", res.ok);
-
-        const contentType = res.headers.get("content-type");
-        console.log("📦 CONTENT-TYPE:", contentType);
-
-        if (!res.ok) {
-          const text = await res.text();
-
-          if (res.status === 403) {
-            console.error("🚫 403 FORBIDDEN - WordPress REST API blocked (plugin / security / Pressable firewall)", text);
-          } else {
-            console.error("❌ API ERROR BODY:", text);
-          }
-
-          setPosts([]);
-          return;
-        }
-
-        if (contentType && !contentType.includes("application/json")) {
-          const text = await res.text();
-          console.error("❌ NON-JSON RESPONSE:", text);
-          setPosts([]);
-          return;
-        }
-
-        const data = await res.json();
-
-        console.log("✅ DATA RECEIVED:", data);
-
-        if (!Array.isArray(data)) {
-          console.warn("⚠️ DATA IS NOT AN ARRAY:", data);
-          setPosts([]);
-          return;
-        }
-
-        setPosts(data);
-      } catch (e) {
-        console.error("🔥 FETCH FAILED (CORS / NETWORK):", e);
-        setPosts([]);
-      }
-    }
-
-    loadPosts();
-  }, []);
+  const posts = journalPosts.slice(0, 5);
 
   return (
     <div className="max-w-4xl mx-auto pb-0 py-16">
@@ -158,15 +98,15 @@ export default function Home() {
               key={post.id}
               slug={post.slug}
               index={(index + 1).toString().padStart(2, "0")}
-              title={post.title?.rendered}
-              excerpt={(post.acf?.summary || post.excerpt?.rendered || "").replace(/<[^>]*>/g, "")}
-              category="JOURNAL"
+              title={post.title}
+              excerpt={(post.acf?.summary || "").replace(/<[^>]*>/g, "")}
+              category={post.acf?.category || "JOURNAL"}
               date={new Date(post.date).toLocaleDateString("en-GB", {
                 day: "2-digit",
                 month: "short",
                 year: "numeric"
               })}
-              read={post.acf?.reading_time ? `${post.acf.reading_time} min` : "5 min"}
+              read={post.readingTime ? `${post.readingTime} min` : "5 min"}
             />
           ))}
 
@@ -229,7 +169,6 @@ export default function Home() {
       </div>
 
       <Footer />
-
     </div>
   );
 }
@@ -260,14 +199,12 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
       <div className="min-w-0">
 
         <div className="text-[12.5px] font-semibold leading-snug break-words">
-
           <Link
             to={`/journal/${slug}`}
             className="text-[var(--accent)] hover:underline underline-offset-4 transition-colors"
           >
             {title}
           </Link>
-
         </div>
 
         <div className="text-xs text-[var(--text-muted)] leading-relaxed mt-2 break-words whitespace-normal">
