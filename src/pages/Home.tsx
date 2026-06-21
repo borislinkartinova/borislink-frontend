@@ -13,7 +13,12 @@ export default function Home() {
       try {
         console.log("📡 FETCH URL:", url);
 
-        const res = await fetch(url);
+        const res = await fetch(url, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
 
         console.log("📊 STATUS:", res.status);
         console.log("📊 OK:", res.ok);
@@ -21,7 +26,6 @@ export default function Home() {
         const contentType = res.headers.get("content-type");
         console.log("📦 CONTENT-TYPE:", contentType);
 
-        // ❌ HTTP error (403, 500, etc.)
         if (!res.ok) {
           const text = await res.text();
           console.error("❌ API ERROR BODY:", text);
@@ -29,7 +33,6 @@ export default function Home() {
           return;
         }
 
-        // ⚠️ ensure JSON response
         if (!contentType || !contentType.includes("application/json")) {
           const text = await res.text();
           console.error("❌ NON-JSON RESPONSE:", text);
@@ -49,7 +52,7 @@ export default function Home() {
 
         setPosts(data);
       } catch (e) {
-        console.error("🔥 FETCH ERROR:", e);
+        console.error("🔥 FETCH FAILED (CORS / NETWORK):", e);
         setPosts([]);
       }
     }
