@@ -1,26 +1,27 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 
 export default function Journal() {
-  const [posts, setPosts] = useState<any[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>("TOUT");
-
-  useEffect(() => {
-    async function loadPosts() {
-      try {
-        const res = await fetch(
-          "https://borislink.mystagingwebsite.com/wp-json/wp/v2/journal?_fields=id,title,excerpt,date,slug,acf&per_page=100"
-        );
-        const data = await res.json();
-        setPosts(data);
-      } catch (e) {
-        console.error("Error loading posts", e);
+  const posts = [
+    {
+      id: 18,
+      date: "2026-06-20T16:48:03",
+      slug: "test-article",
+      title: {
+        rendered: "Pourquoi je lance Boris Link (et la construction d’Artinova en public)"
+      },
+      excerpt: {
+        rendered: "<p>Je documente la construction d’Artinova et mon parcours entrepreneurial.</p>"
+      },
+      acf: {
+        summary: "Je lance Boris Link pour documenter la construction d’Artinova.",
+        category: "ARTINOVA",
+        reading_time: "7"
       }
     }
-
-    loadPosts();
-  }, []);
+  ];
+  const [selectedCategory, setSelectedCategory] = useState<string>("TOUT");
 
   const categories = useMemo(() => {
     const cats = posts

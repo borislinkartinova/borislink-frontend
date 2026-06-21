@@ -13,11 +13,10 @@ export default function Home() {
       try {
         console.log("📡 FETCH URL:", url);
 
+        // GET request (with credentials included)
         const res = await fetch(url, {
           method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          credentials: "include",
         });
 
         console.log("📊 STATUS:", res.status);
@@ -28,12 +27,18 @@ export default function Home() {
 
         if (!res.ok) {
           const text = await res.text();
-          console.error("❌ API ERROR BODY:", text);
+
+          if (res.status === 403) {
+            console.error("🚫 403 FORBIDDEN - WordPress REST API blocked (plugin / security / Pressable firewall)", text);
+          } else {
+            console.error("❌ API ERROR BODY:", text);
+          }
+
           setPosts([]);
           return;
         }
 
-        if (!contentType || !contentType.includes("application/json")) {
+        if (contentType && !contentType.includes("application/json")) {
           const text = await res.text();
           console.error("❌ NON-JSON RESPONSE:", text);
           setPosts([]);
@@ -71,7 +76,7 @@ export default function Home() {
         </div>
 
         <div className="text-xs tracking-widest uppercase text-[var(--text-muted)] mb-6">
-            Fondé en 2026
+          Fondé en 2026
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-semibold leading-[1.1] text-[var(--text)]">
@@ -150,32 +155,19 @@ export default function Home() {
 
           {posts.map((post: any, index: number) => (
             <Row
-
-  key={post.id}
-
-  slug={post.slug}   // 👈 OBLIGATOIRE
-
-  index={(index + 1).toString().padStart(2, "0")}
-
-  title={post.title?.rendered}
-
-  excerpt={(post.acf?.summary || post.excerpt?.rendered || "").replace(/<[^>]*>/g, "")}
-
-  category="JOURNAL"
-
-  date={new Date(post.date).toLocaleDateString("en-GB", {
-
-    day: "2-digit",
-
-    month: "short",
-
-    year: "numeric"
-
-  })}
-
-  read={post.acf?.reading_time ? `${post.acf.reading_time} min` : "5 min"}
-
-/>
+              key={post.id}
+              slug={post.slug}
+              index={(index + 1).toString().padStart(2, "0")}
+              title={post.title?.rendered}
+              excerpt={(post.acf?.summary || post.excerpt?.rendered || "").replace(/<[^>]*>/g, "")}
+              category="JOURNAL"
+              date={new Date(post.date).toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short",
+                year: "numeric"
+              })}
+              read={post.acf?.reading_time ? `${post.acf.reading_time} min` : "5 min"}
+            />
           ))}
 
         </div>
@@ -185,7 +177,6 @@ export default function Home() {
       {/* ABOUT + NEWSLETTER SECTION */}
       <div className="grid md:grid-cols-2 gap-16 mt-24 pt-10 border-t border-[var(--border)] items-start">
 
-        {/* ABOUT */}
         <div className="text-[13.5px] leading-relaxed pr-6">
           <div className="text-xs tracking-widest uppercase text-[var(--text-muted)] mb-4">
             À propos
@@ -207,7 +198,6 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* NEWSLETTER */}
         <div className="text-[13.5px] leading-relaxed">
           <div className="text-xs tracking-widest uppercase text-[var(--text-muted)] mb-4">
             Newsletter
@@ -221,11 +211,11 @@ export default function Home() {
             Chaque semaine : un essai, une mise à jour sur Artinova, et une ressource ou lecture qui m’a marqué.
           </p>
 
-            <p className="text-[var(--text-muted)] mb-6">
+          <p className="text-[var(--text-muted)] mb-6">
             Pas de contenu marketing. Pas de sponsors. Juste le suivi de construction en temps réel.
-            </p>
+          </p>
 
-                      <a
+          <a
             href="https://borislinkartinova.substack.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -263,24 +253,17 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
   return (
     <div className="flex flex-col md:grid md:grid-cols-[40px_minmax(0,1.6fr)_minmax(0,1fr)_140px_80px] items-start py-6 gap-y-2 w-full">
 
-      {/* INDEX */}
       <div className="text-xs text-[var(--text-muted)] font-mono uppercase">
         {index}
       </div>
 
-      {/* TITLE + EXCERPT */}
       <div className="min-w-0">
 
         <div className="text-[12.5px] font-semibold leading-snug break-words">
 
           <Link
             to={`/journal/${slug}`}
-            className="
-  text-[var(--accent)]
-  hover:underline
-  underline-offset-4
-  transition-colors
-"
+            className="text-[var(--accent)] hover:underline underline-offset-4 transition-colors"
           >
             {title}
           </Link>
@@ -293,17 +276,14 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
 
       </div>
 
-      {/* CATEGORY */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest">
         {category}
       </div>
 
-      {/* DATE */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest">
         {date}
       </div>
 
-      {/* READ */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest text-right">
         {read}
       </div>
