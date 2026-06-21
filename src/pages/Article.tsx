@@ -11,7 +11,7 @@ export default function Article() {
 
   if (!post) {
     return (
-      <div className="max-w-2xl mx-auto py-16">
+      <div className="max-w-2xl mx-auto pt-16 pb-0">
         <Link to="/journal" className="text-[var(--accent)] hover:underline">
           ← Retour au journal
         </Link>
@@ -26,7 +26,7 @@ export default function Article() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto py-16">
+    <div className="max-w-2xl mx-auto pt-16 pb-0">
 
       {/* BACK */}
       <Link to="/journal" className="text-sm text-[var(--accent)] hover:underline">
