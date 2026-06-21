@@ -9,7 +9,7 @@ export default function Journal() {
 
   const categories = useMemo(() => {
     const cats = posts
-      .map((p: any) => p.acf?.category || "ARTINOVA")
+      .map((p: any) => p.category || "ARTINOVA")
       .filter(Boolean);
 
     return ["TOUT", ...Array.from(new Set(cats))];
@@ -18,7 +18,7 @@ export default function Journal() {
   const filteredPosts = useMemo(() => {
     if (selectedCategory === "TOUT") return posts;
     return posts.filter(
-      (p: any) => (p.acf?.category || "ARTINOVA") === selectedCategory
+      (p: any) => (p.category || "ARTINOVA") === selectedCategory
     );
   }, [posts, selectedCategory]);
 
@@ -27,7 +27,6 @@ export default function Journal() {
 
       {/* HEADER */}
       <div className="mb-16">
-
         <div className="text-xs tracking-widest uppercase text-[var(--text-muted)] mb-6">
           Journal
         </div>
@@ -76,14 +75,14 @@ export default function Journal() {
             slug={post.slug}
             index={(index + 1).toString().padStart(2, "0")}
             title={post.title}
-            excerpt={(post.excerpt || "").replace(/<[^>]*>/g, "")}
-            category={"ARTINOVA"}
+            excerpt={post.excerpt || ""}
+            category={post.category || "ARTINOVA"}
             date={new Date(post.date).toLocaleDateString("en-GB", {
               day: "2-digit",
               month: "short",
               year: "numeric"
             })}
-            read={post.acf?.reading_time ? `${post.acf.reading_time} min` : "5 min"}
+            read={post.readingTime ? `${post.readingTime} min` : "5 min"}
           />
         ))}
       </div>
@@ -97,14 +96,11 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
   return (
     <div className="flex flex-col md:grid md:grid-cols-[40px_minmax(0,1.6fr)_minmax(0,1fr)_140px_80px] items-start py-6 gap-y-2 w-full">
 
-      {/* INDEX */}
       <div className="text-xs text-[var(--text-muted)] font-mono uppercase">
         {index}
       </div>
 
-      {/* TITLE + EXCERPT */}
       <div className="min-w-0">
-
         <div className="text-[12.5px] font-semibold leading-snug break-words">
           <Link
             to={`/journal/${slug}`}
@@ -121,17 +117,14 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
         )}
       </div>
 
-      {/* CATEGORY */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest">
         {category}
       </div>
 
-      {/* DATE */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest">
         {date}
       </div>
 
-      {/* READ */}
       <div className="hidden md:block text-xs text-[var(--text-muted)] uppercase tracking-widest text-right">
         {read}
       </div>
