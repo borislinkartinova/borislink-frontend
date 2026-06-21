@@ -123,7 +123,7 @@ export default function Home() {
           </div>
 
           <p className="text-[var(--text-muted)] leading-relaxed mb-4">
-            Je suis Boris Link, fondateur d'Artinova, une plateforme de gestion pour artisans indépendants en Europe.
+            Je suis Boris Link, fondateur d'Artinova, une plateforme de gestion pour artisans en France.
           </p>
 
           <p className="text-[var(--text-muted)] leading-relaxed mb-4">
