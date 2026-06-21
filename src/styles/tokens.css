@@ -1,0 +1,22 @@
+:root {
+  /* BACKGROUND */
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+
+  /* TEXT */
+  --text: #0F172A;
+  --text-muted: #64748B;
+
+  /* ACCENTS */
+  --accent: #0F766E;
+
+  /* LAYOUT */
+  --radius: 10px;
+  --container: 1100px;
+
+  /* TYPO */
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
