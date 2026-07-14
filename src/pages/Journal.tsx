@@ -69,11 +69,11 @@ export default function Journal() {
 
       {/* ROWS */}
       <div className="divide-y divide-[var(--border)]">
-        {filteredPosts.map((post: any, index: number) => (
+        {filteredPosts.map((post: any) => (
           <Row
             key={post.id}
             slug={post.slug}
-            index={(index + 1).toString().padStart(2, "0")}
+            index={String(post.id).padStart(2, "0")}
             title={post.title}
             excerpt={post.excerpt || post.content?.split("\n")[0] || ""}
             category={post.category || "ARTINOVA"}

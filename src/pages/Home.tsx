@@ -93,11 +93,11 @@ export default function Home() {
 
         <div className="divide-y divide-[var(--border)]">
 
-          {posts.map((post: any, index: number) => (
+          {posts.map((post: any) => (
             <Row
               key={post.id}
               slug={post.slug}
-              index={(index + 1).toString().padStart(2, "0")}
+              index={String(post.id).padStart(2, "0")}
               title={post.title}
               excerpt={(post.acf?.summary || "").replace(/<[^>]*>/g, "")}
               category={post.acf?.category || "JOURNAL"}

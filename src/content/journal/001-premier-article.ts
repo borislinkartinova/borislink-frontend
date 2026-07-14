@@ -90,39 +90,39 @@ Certains ont échoué.
 
 D’autres m’ont énormément appris.
 
-### 🚀 Sorare community
+### 🚀 Plateforme football & actifs numériques
 
-- +1000 abonnés newsletter  
+- +1000 abonnés newsletter
 
-- +5500 abonnés Twitter  
+- +5500 abonnés sur les réseaux sociaux
 
-### 🧾 Waltio (SaaS crypto)
+### 🧾 Startup fiscalité des actifs numériques (SaaS)
 
-- support client  
+- support client
 
-- cycles produit  
+- cycles produit
 
-- acquisition  
+- acquisition
 
-- partenariats  
+- partenariats
 
 ### 📞 SDR roles
 
-- lead sourcing  
+- lead sourcing
 
-- cold calls  
+- cold calls
 
-- qualification  
+- qualification
 
-- vente B2B SaaS  
+- vente B2B SaaS
 
-### 📊 Pépites Bourguignonnes
+### 📊 Média local (Bourgogne)
 
-- +300 contenus  
+- +300 contenus
 
-- +2M vues Instagram  
+- +2M vues sur les réseaux sociaux
 
-- automatisations (Airtable, n8n, GPT)  
+- automatisations (bases de données, orchestration, IA)
 
 ---
 
@@ -136,7 +136,7 @@ Je passais vite au suivant.
 
 Mais je ne construisais pas sur le long terme.
 
-Pépites Bourguignonnes a été un déclic.
+Ce média local a été un déclic.
 
 Je ne veux pas créer un média.
 
