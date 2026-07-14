@@ -822,10 +822,6 @@ Et cette fois, je ne cherche pas le prochain projet.
 Je veux construire celui-ci.
 
 Pendant longtemps.
-
-La bise,
-
-Boris
 `
   }
 ];
