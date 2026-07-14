@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { journalPosts } from "../content/journal";
+import { journalPosts, formatReadingTime } from "../content/journal";
 
 export default function Home() {
   const posts = journalPosts.slice(0, 5);
@@ -106,7 +106,7 @@ export default function Home() {
                 month: "short",
                 year: "numeric"
               })}
-              read={post.readingTime ? `${post.readingTime} min` : "5 min"}
+              read={formatReadingTime(post.readingTime)}
             />
           ))}
 
@@ -148,7 +148,7 @@ export default function Home() {
           </p>
 
           <p className="text-[var(--text-muted)] mb-6">
-            Chaque semaine : un essai, une mise à jour sur Artinova, et une ressource ou lecture qui m’a marqué.
+            Chaque semaine, je partage une note sur mes projets, ce que j’apprends et les idées qui m’accompagnent. Le format évoluera progressivement avec des réflexions, des ressources, des outils ou des conversations qui m’ont marqué.
           </p>
 
           <p className="text-[var(--text-muted)] mb-6">

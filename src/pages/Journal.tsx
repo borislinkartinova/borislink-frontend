@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { journalPosts } from "../content/journal";
+import { journalPosts, formatReadingTime } from "../content/journal";
 
 export default function Journal() {
   const posts = journalPosts;
@@ -82,7 +82,7 @@ export default function Journal() {
               month: "short",
               year: "numeric"
             })}
-            read={post.readingTime ? `${post.readingTime} min` : "5 min"}
+            read={formatReadingTime(post.readingTime)}
           />
         ))}
       </div>

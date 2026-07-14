@@ -8,7 +8,7 @@ export const post = {
 
   date: "2026-06-20",
 
-  readingTime: "7 min",
+  readingTime: 7,
 
   content: `
 

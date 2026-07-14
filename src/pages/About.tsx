@@ -10,7 +10,7 @@ export default function About() {
           À propos
         </div>
 
-        <h1 className="text-3xl sm:text-4xl font-semibold text-[var(--text)] leading-tight">
+        <h1 className="text-3xl sm:text-5xl font-semibold leading-[1.1] text-[var(--text)]">
           Qui je suis et pourquoi j’écris ici.
         </h1>
       </div>
@@ -67,7 +67,7 @@ export default function About() {
 
             <div className="space-y-4 text-[var(--text-muted)] leading-relaxed">
 
-              <p><strong className="text-[var(--text)]">Long terme</strong> : Ce journal existera dans dix ans. J’écris en conséquence.</p>
+              <p><strong className="text-[var(--text)]">Long terme</strong> : Je veux construire ce journal pour qu’il soit encore utile dans dix ans. J’écris en conséquence.</p>
 
               <p><strong className="text-[var(--text)]">Clarté</strong> : Je n’essaie pas de convaincre, mais de comprendre.</p>
 
@@ -75,7 +75,7 @@ export default function About() {
 
               <p><strong className="text-[var(--text)]">Systèmes</strong> : Tout ce que je construis doit fonctionner même quand je suis fatigué ou distrait.</p>
 
-              <p><strong className="text-[var(--text)]">Indépendance</strong> : Pas d’équipe, pas de capital externe pour l’instant.</p>
+              <p><strong className="text-[var(--text)]">Indépendance de pensée</strong> : Prendre des décisions selon ce qui est bon pour le projet sur le long terme, pas selon les tendances du moment.</p>
 
             </div>
           </section>

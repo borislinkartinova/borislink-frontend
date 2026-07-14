@@ -1,10 +1,15 @@
+export function formatReadingTime(value: unknown): string {
+  const minutes = parseInt(String(value ?? ""), 10);
+  return Number.isFinite(minutes) ? `${minutes} min` : "5 min";
+}
+
 export const journalPosts = [
   {
     id: 1,
     slug: "pourquoi-je-lance-boris-link",
     title: "Pourquoi je lance Boris Link (et la construction d’Artinova en public)",
     date: "2026-06-20",
-    readingTime: "7 min",
+    readingTime: 7,
 
     content: `
 ## 1. Introduction
