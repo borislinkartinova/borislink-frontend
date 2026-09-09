@@ -60,10 +60,10 @@ export default function Home() {
 
       {/* METRICS */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-12 border-y border-[var(--border)] py-8 items-start text-left">
-        <Metric value="0" label="Articles publiés" />
-        <Metric value="0" label="Abonnés newsletter" />
+        <Metric value="3" label="Articles publiés" />
+        <Metric value="10" label="Abonnés newsletter" />
         <Metric value="0€" label="MRR Artinova" />
-        <Metric value="0" label="Mois de construction" />
+        <Metric value="3" label="Mois de construction" />
       </div>
 
       {/* RECENT WRITING */}
