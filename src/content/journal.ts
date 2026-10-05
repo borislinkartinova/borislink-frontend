@@ -904,14 +904,14 @@ Artinova n’est pas encore un service ouvert au public. Les comptes sont créé
 
 À ce stade, huit grands blocs sont accessibles aux personnes invitées dans la bêta :
 
-1. les fiches clients et contacts ;
-2. les devis ;
-3. les bibliothèques et ouvrages ;
-4. les factures ;
-5. les avoirs ;
-6. les paiements enregistrés manuellement ;
-7. les relances manuelles ;
-8. les utilisateurs et leurs droits.
+- les fiches clients et contacts ;
+- les devis ;
+- les bibliothèques et ouvrages ;
+- les factures ;
+- les avoirs ;
+- les paiements enregistrés manuellement ;
+- les relances manuelles ;
+- les utilisateurs et leurs droits.
 
 Deux autres blocs sont présents, mais leur fonctionnement réel en production doit encore être vérifié : la lecture des factures fournisseurs et les exports comptables.
 
@@ -951,7 +951,7 @@ Notre travail n’est pas de copier une interface. Il consiste à comprendre ce 
 
 ## Commercial : notre CRM progresse plus vite que notre mesure
 
-Notre CRM contient aujourd’hui **plus de 50 pistes**, **43 organisations** et **4 contacts convertis**.
+Notre CRM contient aujourd’hui **plus de 50 leads**, **43 organisations** et **4 contacts convertis**.
 
 Ces données mélangent encore plusieurs populations :
 
@@ -1111,7 +1111,7 @@ Au 5 octobre 2026, Artinova, c’est donc :
 - 41 déploiements en préproduction ;
 - 4 mises en production ;
 - 8 grands blocs accessibles sur invitation ;
-- plus de 50 pistes dans notre CRM, encore à mieux qualifier ;
+- plus de 50 leads dans notre CRM, encore à mieux qualifier ;
 - plus de 20 retours collectés ;
 - 44 publications répertoriées ;
 - 39 abonnés à la newsletter.
