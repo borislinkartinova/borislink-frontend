@@ -4,6 +4,7 @@ import { journalPosts, formatReadingTime } from "../content/journal";
 
 export default function Home() {
   const posts = journalPosts.slice(0, 5);
+  const constructionMonths = getConstructionMonths();
 
   return (
     <div className="max-w-4xl mx-auto pb-0 py-16">
@@ -61,9 +62,9 @@ export default function Home() {
       {/* METRICS */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-12 border-y border-[var(--border)] py-8 items-start text-left">
         <Metric value="3" label="Articles publiés" />
-        <Metric value="10" label="Abonnés newsletter" />
+        <Metric value="39" label="Abonnés newsletter" />
         <Metric value="0€" label="MRR Artinova" />
-        <Metric value="3" label="Mois de construction" />
+        <Metric value={String(constructionMonths)} label="Mois de construction" />
       </div>
 
       {/* RECENT WRITING */}
@@ -99,8 +100,8 @@ export default function Home() {
               slug={post.slug}
               index={String(post.id).padStart(2, "0")}
               title={post.title}
-              excerpt={(post.acf?.summary || "").replace(/<[^>]*>/g, "")}
-              category={post.acf?.category || "JOURNAL"}
+              excerpt={(post.acf?.summary || post.excerpt || "").replace(/<[^>]*>/g, "")}
+              category={post.acf?.category || post.category || "JOURNAL"}
               date={new Date(post.date).toLocaleDateString("en-GB", {
                 day: "2-digit",
                 month: "short",
@@ -171,6 +172,23 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+
+function getConstructionMonths() {
+  const start = new Date(Date.UTC(2026, 5, 20));
+  const now = new Date();
+  const today = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())
+  );
+
+  let months =
+    (today.getUTCFullYear() - start.getUTCFullYear()) * 12 +
+    today.getUTCMonth() -
+    start.getUTCMonth();
+
+  if (today.getUTCDate() < start.getUTCDate()) months -= 1;
+
+  return Math.min(24, Math.max(0, months));
 }
 
 /* ---------------- COMPONENTS ---------------- */

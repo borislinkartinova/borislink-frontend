@@ -824,15 +824,309 @@ Je veux construire celui-ci.
 Pendant longtemps.
 `
   },
-{
-  "id": 3,
-  "slug": "artinova-premiers-chiffres-beta-choix-construction",
-  "title": "Artinova : 15 futurs bêta-testeurs, les premiers chiffres et les choix qui prennent du temps",
-  "date": "2026-09-09",
-  "category": "JOURNAL",
-  "readingTime": 10,
-  "content": "Depuis le lancement de ce journal, j’ai surtout raconté mon parcours et les raisons qui m’ont conduit à construire Artinova.\n\nAujourd’hui, j’ai envie de parler de ce qui avance concrètement. Des premiers artisans prêts à tester le produit, des contenus que nous publions, des dépenses et des décisions techniques qui nous prennent parfois plus de temps que prévu.\n\nNous avons actuellement 15 futurs bêta-testeurs pour un objectif de 20. Le lancement des premiers tests est prévu le 5 octobre. Et le revenu mensuel récurrent d’Artinova est toujours de 0 €.\n\nCes trois chiffres résument assez bien notre situation : des personnes sont prêtes à essayer, mais il reste à leur livrer quelque chose d’utile.\n\n## 15 personnes prêtes à tester, pas encore 15 utilisateurs actifs\n\nJe tiens à faire la distinction. Accepter de participer à une bêta, utiliser réellement un logiciel et décider de le payer sont trois étapes différentes.\n\nPour l’instant, nous avons franchi la première avec 15 personnes. L’objectif est d’en réunir 20 pour confronter Artinova à des façons de travailler différentes, tout en gardant la capacité d’accompagner chacun correctement.\n\nNous prévoyons de démarrer le 5 octobre avec les participants qui n’ont pas encore déclaré de plateforme agréée pour la facturation électronique. Les autres seront intégrés dans un second temps.\n\nC’est notre calendrier de lancement à ce stade. La suite dépendra aussi de ce que nous découvrirons pendant les premiers tests.\n\nCe que j’attends de cette bêta, ce sont des retours précis : à quel moment un artisan hésite, ce qu’il ne comprend pas, ce qui lui fait gagner du temps et ce qui lui en fait perdre.\n\nLors de nos échanges, certains nous ont répondu qu’il faudrait « voir à l’usage ». Ils ont raison. Une démonstration peut donner envie. Seul le quotidien permettra de savoir si Artinova trouve sa place entre les appels, les devis et les chantiers.\n\n## Construire une prospection que je peux suivre\n\nDans mon parcours commercial, on m’avait demandé de constituer une liste de 1 500 prospects. Je veux reprendre cette discipline pour Artinova.\n\nC’est un objectif de constitution de base, pas un résultat déjà atteint.\n\nL’enjeu est de savoir qui contacter, pourquoi, où nous en sommes dans l’échange et quelle est la prochaine action. Je commence à structurer ce suivi dans Salesforce.\n\nÀ ce stade, ma priorité reste de recruter les cinq participants manquants et de préparer les premiers tests. Une grande base de contacts ne nous aidera pas beaucoup si nous perdons le fil des conversations déjà engagées.\n\nLes appels nous apportent d’ailleurs bien plus qu’un éventuel participant supplémentaire.\n\nPendant un échange, un artisan multiservices nous a expliqué que certains devis lui demandaient trois à cinq heures de préparation et que l’administratif débordait régulièrement sur ses week-ends. Il avait construit et entretenu sa propre bibliothèque de prix pendant près de trente ans.\n\nCe genre de conversation rappelle tout ce qu’un logiciel doit respecter : des habitudes, une expérience du métier et des outils parfois bricolés, mais adaptés à une réalité très précise.\n\nCet artisan a accepté de tester Artinova. Il nous a également conseillé de présenter le projet à un réseau professionnel dont il fait partie. C’est une piste à travailler, sans présumer de ce qu’elle donnera.\n\nMa stratégie commerciale commence donc là : appeler, écouter, suivre les échanges et revenir avec un produit qui tient compte de ce que nous avons entendu.\n\n## Les premiers chiffres du contenu\n\nEn parallèle, nous avons commencé à publier autour d’Artinova, notamment sur l’organisation des artisans et la facturation électronique.\n\nNous avons produit deux carrousels diffusés sur Instagram et LinkedIn, trois Reels Instagram, une vidéo YouTube de 26 minutes et trois Shorts. Sur LinkedIn, nous avons aussi publié trois vidéos et essayé plusieurs posts texte. Quatre vidéos ont été mises en ligne sur TikTok.\n\nAu moment où je fais ce point, voici les chiffres que j’ai relevés :\n\n- Environ 700 vues sur Instagram.\n- 22 vues sur la vidéo longue YouTube.\n- Environ 650 vues sur les Shorts YouTube.\n- 956 impressions sur LinkedIn.\n- Environ 1 300 vues sur TikTok.\n- 423 vues sur Facebook.\n\nCe sont de premiers relevés, avec des indicateurs différents selon les plateformes. Une impression LinkedIn ne correspond pas nécessairement à une vue vidéo, et une même personne peut nous retrouver à plusieurs endroits. Je ne vais donc pas additionner tout cela pour annoncer une audience unique.\n\nLes volumes restent modestes. Ils nous permettent surtout de commencer à comparer les formats.\n\nLes deux vidéos courtes issues de notre entretien long sont celles qui ressortent le mieux dans mes premiers relevés sur les différentes plateformes. Les posts texte ont moins bien fonctionné jusqu’ici.\n\nJ’y vois une piste à poursuivre : préparer une conversation utile, la publier en entier, puis en extraire plusieurs séquences qui répondent chacune à une question précise.\n\nLa vidéo longue n’a que 22 vues pour le moment. Pourtant, sa production nous a aussi fourni de la matière pour les formats courts. C’est cette combinaison que je trouve intéressante.\n\nIl est trop tôt pour dire que nous avons trouvé une stratégie d’acquisition. Nous avons surtout trouvé un format que j’ai envie de tester à nouveau, sur d’autres thèmes et avec d’autres intervenants proches des préoccupations des artisans.\n\n## Il manque encore une partie de la mesure\n\nGoogle Analytics n’est pas encore installé sur le site.\n\nJe peux regarder les chiffres des réseaux, mais je ne dispose pas encore du suivi nécessaire pour relier proprement ces publications aux visites du site et aux demandes de participation.\n\nC’est une limite importante de ce bilan. Je ne peux pas affirmer qu’une vidéo qui fait davantage de vues nous apporte davantage de futurs utilisateurs.\n\nLa prochaine étape est de mieux mesurer le parcours : ce qui amène quelqu’un sur le site, ce qu’il y consulte et ce qui l’incite à nous contacter.\n\nNous travaillons aussi sur la diffusion du projet auprès de médias, avec un objectif de visibilité et de référencement. C’est en cours ; je n’ai pas encore de résultat à en tirer.\n\nPour la suite, je veux conserver un rythme de contenu que nous pouvons tenir tout en construisant le produit. Les questions entendues pendant les appels et les tests devraient nous donner de meilleurs sujets que la recherche permanente d’idées de publications.\n\n## Une décision technique que nous avons dû revoir\n\nNous avions initialement pensé une partie du produit autour d’un seul partenaire de facturation électronique.\n\nEn avançant, nous avons compris que cette dépendance pouvait nous limiter. Un changement de tarifs, un problème de service ou une évolution de nos besoins aurait pu nous obliger à reprendre trop de choses.\n\nNous construisons donc une couche intermédiaire entre Artinova et cette intégration. L’objectif est de pouvoir faire évoluer le partenaire sans devoir reconstruire toute la partie du produit qui en dépend.\n\nCela nous prend du temps et nous met un peu en retard.\n\nJe préfère le noter ici, parce que c’est aussi cela, construire un logiciel : découvrir qu’une décision qui paraissait suffisante au départ mérite d’être revue avant d’aller plus loin.\n\nCette adaptation ne supprime pas toutes les dépendances. Elle doit simplement nous donner davantage de marge de manœuvre.\n\n## Penser à dix ans, tout en livrant une première version\n\nÀ l’inverse, je suis satisfait du travail que nous avons fait pour choisir notre socle technique avec une perspective de long terme.\n\nJe veux construire Artinova pendant dix ans. Cela influence forcément les choix que nous faisons aujourd’hui : la capacité à maintenir le produit, à le faire évoluer et à comprendre ce que nous avons construit dans quelques années compte pour moi.\n\nNous avançons parfois plus lentement au début. Je suis convaincu que certains de ces choix nous feront gagner du temps ensuite, même si cela reste à démontrer.\n\nIl faut aussi garder une limite : penser au long terme peut devenir une excuse pour repousser le contact avec les utilisateurs.\n\nLa bêta doit nous ramener à quelque chose de concret. Nous avons besoin d’un produit que des artisans peuvent utiliser et sur lequel ils peuvent nous faire des retours. Toutes les décisions techniques doivent finir par servir cette expérience.\n\n## Le prix doit aussi financer l’accompagnement\n\nNous travaillons également sur notre grille tarifaire. Je ne vais pas publier les montants ici.\n\nCela ne signifie pas que le prix sera décidé à la tête du client. Nous avons une grille, avec une logique liée aux modules utilisés.\n\nDans nos calculs, nous devons tenir compte du logiciel, mais aussi de l’accompagnement, du support et du temps nécessaire pour aider une entreprise à prendre l’outil en main.\n\nJ’aimerais qu’Artinova apporte du temps gagné et une meilleure organisation. Il faudra le vérifier avec les utilisateurs, puis construire un modèle économique capable de financer durablement ce service.\n\nL’étude des offres concurrentes nous a aussi rappelé que le prix affiché ne raconte pas toute l’économie d’un logiciel. Derrière, il y a des coûts techniques, des engagements auprès de prestataires et le travail nécessaire pour faire fonctionner le produit.\n\nDans nos estimations, servir les premiers utilisateurs représente déjà plusieurs milliers d’euros à financer. Je ne vais pas détailler chaque dépense, mais cet ordre de grandeur fait partie de la réalité du projet.\n\n## Suivre les dépenses aussi sérieusement que les inscriptions\n\nÀ ce stade, Artinova ne génère pas encore de revenu mensuel récurrent. Les dépenses, elles, ont commencé.\n\nFaire un point comptable une fois par mois me paraît indispensable pour comprendre ce que le projet nous coûte réellement et les engagements que nous prenons.\n\nPour certains outils ou prestataires, nous avons choisi de payer à l’année. Cela nous donne de la visibilité, mais il faut aussi garder en tête la trésorerie mobilisée dès maintenant.\n\nNotre objectif est qu’Artinova ne nous coûte plus d’argent à la fin du programme Lyon Start Up : que les revenus couvrent les dépenses du projet.\n\nC’est un objectif, pas une prévision acquise. Il nous oblige à relier les décisions produit, le recrutement des premiers utilisateurs, le prix et les coûts.\n\nNous arrivons sur un marché où des entreprises solides sont déjà présentes. Cela impose d’être précis sur ce que nous pouvons apporter et sur les personnes pour lesquelles nous voulons le construire.\n\n## La prochaine étape se joue dans l’usage\n\nD’ici au lancement de la bêta, nos priorités sont assez claires : compléter le groupe de 20 participants, préparer leur arrivée, terminer les éléments nécessaires aux tests et améliorer notre mesure du trafic.\n\nJe veux aussi poursuivre les entretiens vidéo, en partant de sujets utiles aux artisans, puis regarder si cette régularité produit autre chose que des vues.\n\nAujourd’hui, nous avons 15 personnes prêtes à essayer Artinova, quelques premiers signaux sur le contenu et plusieurs décisions de construction qui commencent à prendre forme.\n\nLe prochain bilan devra aller plus loin : raconter ce que les artisans ont réellement fait avec le produit, ce qui les a aidés et ce que nous avons dû corriger.\n\nC’est ce passage des intentions à l’usage que j’attends maintenant."
-}
+  {
+    id: 3,
+    slug: "artinova-bilan-quatrieme-mois-chiffres",
+    title: "Artinova, dans notre quatrième mois : le produit, les coûts et les chiffres que nous devons encore apprendre à suivre",
+    date: "2026-10-05",
+    category: "ARTINOVA",
+    readingTime: 14,
+    excerpt: "Produit, prospection, dépenses et contenu : un bilan transparent de notre quatrième mois de construction.",
+    content: `
+Le 20 juin 2026, nous avons commencé à construire Artinova.
+
+Nous sommes le 5 octobre. Quatre mois complets ne se sont pas encore écoulés, mais nous sommes entrés dans notre quatrième mois de construction.
+
+Après deux articles consacrés à mon parcours et aux raisons qui m’ont conduit jusqu’ici, je veux désormais utiliser ce journal autrement : documenter Artinova avec des chiffres.
+
+Le produit, la prospection, les dépenses et le contenu. Ce qui avance, ce qui ne fonctionne pas encore et ce que nous mesurons mal.
+
+Cette transparence n’a pas pour objectif de donner l’impression que tout va vite ou que tout est maîtrisé. Elle doit nous obliger à regarder la réalité en face et permettre à celles et ceux qui construisent un logiciel de voir ce qu’il y a derrière les annonces.
+
+En quatre mois, Artinova a généré **0 € de revenu mensuel récurrent**. Nous négocions une première lettre d’intention représentant un peu plus de 800 € par an, mais tant qu’elle n’est pas signée et encaissée, ce n’est pas du revenu.
+
+En revanche, nous avons déjà investi **au moins 2 508,77 €**, fusionné **240 demandes de modification** et réalisé **4 mises en production**.
+
+Ces chiffres racontent mieux notre situation que n’importe quelle formule : nous avons construit beaucoup, dépensé de l’argent et commencé à confronter le produit au terrain. Il nous reste maintenant à transformer ce travail en usage réel, puis en chiffre d’affaires.
+
+---
+
+## Les quatre familles de chiffres que nous allons suivre
+
+Nous avons mis en place deux fichiers qui occupent une place centrale dans nos décisions : l’un suit nos dépenses, l’autre nos efforts de prospection.
+
+Notre dépôt de code est devenu la source de vérité pour le produit. Notre suivi éditorial rassemble progressivement les contenus publiés et les résultats disponibles.
+
+À partir de maintenant, je veux suivre quatre familles d’indicateurs :
+
+- les chiffres produit ;
+- les chiffres commerciaux ;
+- les chiffres comptables ;
+- les chiffres marketing.
+
+Le plus intéressant n’est pas seulement la valeur de chaque indicateur. Ce sont aussi les trous dans notre mesure. Plusieurs d’entre eux m’ont sauté aux yeux en préparant cet article.
+
+---
+
+## Produit : près de 1 300 commits et quatre mises en production
+
+Le dépôt principal d’Artinova a été créé le 22 juin. La première demande de modification a été fusionnée le 1er juillet.
+
+Depuis, nous avons fusionné **240 demandes de modification** :
+
+- 20 en juillet ;
+- 71 en août ;
+- 144 en septembre ;
+- 5 entre le 1er et le 5 octobre.
+
+Parmi elles, **189 concernent le développement**. Les 51 autres servent principalement à faire progresser le code vers les environnements de test et de production.
+
+Le dépôt compte **1 287 commits sur la branche de développement**, soit près de 1 300 depuis sa création.
+
+Deux personnes contribuent humainement au produit : Evan et moi. Notre travail est fortement assisté par l’intelligence artificielle. **873 commits hors fusion portent notamment un modèle Claude comme coauteur.** Je trouve important de le préciser : l’IA accélère une partie de notre travail, mais elle ne remplace ni les décisions produit, ni les vérifications, ni la responsabilité de ce que nous mettons en ligne.
+
+La progression technique se traduit aussi par :
+
+- **41 déploiements réussis en préproduction** depuis le 28 juillet ;
+- **4 mises en production distinctes et vérifiées** depuis le 16 septembre ;
+- **3 versions majeures**, dont la troisième est la seule à avoir atteint la production ;
+- **61 versions publiées** au total, en comptant les versions intermédiaires.
+
+Sur le code correspondant à la production au 1er octobre, **13 891 tests automatisés et 7 tests de bout en bout ont réussi, sans échec**.
+
+Le nombre paraît impressionnant, mais ce n’est pas une preuve que le produit répond au besoin. Les tests vérifient le comportement attendu du logiciel. Ils ne disent pas encore si un artisan l’utilise chaque semaine, comprend les écrans ou gagne réellement du temps.
+
+---
+
+## Ce que la bêta permet réellement de faire
+
+Artinova n’est pas encore un service ouvert au public. Les comptes sont créés sur invitation et nous ne disposons pas, à partir du code seul, de chiffres d’usage fiables.
+
+À ce stade, huit grands blocs sont accessibles aux personnes invitées dans la bêta :
+
+1. les fiches clients et contacts ;
+2. les devis ;
+3. les bibliothèques et ouvrages ;
+4. les factures ;
+5. les avoirs ;
+6. les paiements enregistrés manuellement ;
+7. les relances manuelles ;
+8. les utilisateurs et leurs droits.
+
+Deux autres blocs sont présents, mais leur fonctionnement réel en production doit encore être vérifié : la lecture des factures fournisseurs et les exports comptables.
+
+Cette nuance compte. Une fonctionnalité visible dans une interface, couverte par des tests ou déployée sur un serveur n’est pas automatiquement une fonctionnalité utile et opérationnelle pour un client.
+
+Certaines limites sont déjà connues :
+
+- pas de signature des devis en ligne ;
+- pas de paiement en ligne ;
+- pas de relances automatiques ;
+- pas d’export complet des clients ;
+- pas de planning opérationnel.
+
+Le raccordement à une plateforme agréée et la réception des factures électroniques sont encore en cours d’intégration. Nous n’avons pas encore démontré la réception et le traitement d’une facture électronique réelle. Je vais solliciter plusieurs fournisseurs et, si nécessaire, réaliser un achat professionnel pour effectuer ce test de bout en bout.
+
+Tant que cette facture n’aura pas été reçue et traitée, je ne considérerai pas cette partie comme terminée.
+
+---
+
+## Un premier retour de démo est déjà devenu du développement
+
+Nous avons commencé les démonstrations auprès d’artisans.
+
+Un premier retour a déjà produit une modification documentée : permettre de conserver un brouillon de fiche client, de devis ou de facture lorsqu’une connexion devient indisponible.
+
+Le développement est terminé sur notre branche de travail et reste à déployer en production.
+
+Un seul retour transformé en développement peut sembler modeste. C’est pourtant un indicateur que je veux suivre : combien de remarques entendues sur le terrain deviennent une décision, puis une amélioration réellement mise à disposition ?
+
+Nous nous inspirons aussi de produits que nous respectons. Facture.net et InterFast nous ont aidés à comprendre certains standards d’usage. InterFast est un très beau produit, et plusieurs de ses utilisateurs nous ont clairement dit qu’ils ne pensaient pas que nous pourrions faire mieux.
+
+Pari accepté.
+
+Notre travail n’est pas de copier une interface. Il consiste à comprendre ce qui fonctionne déjà, à y apporter notre approche et, demain, à intégrer l’IA là où elle produit un bénéfice concret.
+
+---
+
+## Commercial : notre CRM progresse plus vite que notre mesure
+
+Notre CRM contient aujourd’hui **plus de 50 pistes**, **43 organisations** et **4 contacts convertis**.
+
+Ces données mélangent encore plusieurs populations :
+
+- des entreprises susceptibles d’utiliser Artinova ;
+- des apporteurs d’affaires et partenaires potentiels ;
+- des médias spécialisés ;
+- des créateurs de contenu.
+
+Je pourrais additionner tous ces enregistrements et publier un gros chiffre de « prospects ». Ce serait trompeur.
+
+Nous devons d’abord distinguer clairement un client potentiel, un partenaire, un média et un influenceur. Nous devons ensuite recompter les personnes réellement contactées, les conversations engagées, les entretiens terminés et les participants à la bêta.
+
+Nous avons collecté plus de vingt retours au cours de nos échanges, sans avoir invité toutes ces personnes à tester le produit. Certains échanges servent à comprendre le marché. D’autres concernent de futurs utilisateurs. D’autres encore aboutissent à une disqualification.
+
+Cette préparation m’a aussi révélé une faiblesse plus gênante : **je ne connais pas le nombre exact d’appels réalisés**.
+
+J’ai essayé une solution de téléphonie professionnelle, mais elle ne proposait pas de numéro mobile adapté à notre besoin. Les autres solutions représentent rapidement un coût important pour une entreprise qui ne génère pas encore de revenu.
+
+Ce n’est pas une excuse. Tant que nous n’avons pas trouvé le bon outil, je dois tenir ce suivi manuellement.
+
+À partir d’aujourd’hui, je veux pouvoir répondre précisément à quatre questions :
+
+- combien de personnes avons-nous appelées ?
+- combien ont réellement échangé avec nous ?
+- combien ont accepté un entretien ou une démonstration ?
+- combien ont commencé à utiliser le produit ?
+
+Je prévois également d’ajouter de la prospection physique. Nous avons parlé à de nombreux indépendants, mais encore trop peu d’entreprises comptant entre 5 et 50 salariés. Aller à leur rencontre sera probablement l’objet d’un prochain article.
+
+---
+
+## Comptabilité : au moins 2 508,77 € investis
+
+Au 30 septembre, notre suivi recense **2 508,77 € de dépenses payées**.
+
+Je préfère écrire « au moins », car un montant de développement doit encore être ajouté et plusieurs justificatifs restent à rapprocher.
+
+Les principales catégories sont les suivantes :
+
+| Catégorie | Montant payé |
+| --- | ---: |
+| Intelligence artificielle | 899,43 € |
+| Développement | 296,03 € |
+| Design | 283,20 € |
+| Logement d’équipe | 233,02 € |
+| Organisation | 220,10 € |
+| Transport | 132,49 € |
+| Commercial | 108,00 € |
+| Transcription | 104,33 € |
+| Création vidéo | 93,63 € |
+| Hébergement | 84,04 € |
+| Recherche | 30,50 € |
+| Téléphonie | 24,00 € |
+
+Je ne souhaite pas détailler publiquement chaque fournisseur. L’information utile est ailleurs : construire un logiciel mobilise de l’argent avant de générer du revenu.
+
+Une partie importante de nos dépenses concerne les outils d’intelligence artificielle et de développement. Une autre finance la création, l’organisation de l’équipe, la prospection et la compréhension du marché.
+
+Notre MRR reste à **0 €**.
+
+Une première lettre d’intention, représentant un peu plus de **800 € annuels**, est en cours de négociation. Je la mentionne comme un signal commercial, pas comme un contrat signé ni comme du revenu.
+
+Nous suivrons désormais chaque mois :
+
+- les dépenses payées ;
+- les engagements récurrents ;
+- les revenus encaissés ;
+- le revenu mensuel récurrent ;
+- la répartition des coûts par grande catégorie.
+
+La transparence financière fera partie de l’ADN d’Artinova. Pas pour nous vanter lorsque les chiffres seront bons, mais pour expliquer les décisions et les contraintes qui accompagnent la construction d’une entreprise logicielle.
+
+---
+
+## Marketing : 44 publications répertoriées et une mesure encore incomplète
+
+Le contenu est devenu l’un de nos principaux axes d’acquisition.
+
+Nous publions autour de la facturation électronique, de la gestion des entreprises du bâtiment et de ce que nous apprenons auprès des artisans. Nous développons également le blog d’Artinova et [tv.artinova.fr](https://tv.artinova.fr).
+
+Au 5 octobre, notre calendrier recense **44 publications disposant d’une URL** :
+
+- 11 sur LinkedIn ;
+- 10 sur Instagram ;
+- 8 sur TikTok ;
+- 7 sur YouTube ;
+- 6 sur Facebook ;
+- 2 newsletters dans ce relevé historique, auxquelles s’ajoute la troisième édition envoyée le 1er octobre.
+
+Nos audiences restent modestes, mais elles progressent :
+
+- **64 abonnés** sur LinkedIn ;
+- **14 abonnés et 13 publications** sur Instagram ;
+- **6 abonnés et 7 vidéos** sur YouTube ;
+- **3 abonnés et 22 mentions J’aime** sur TikTok ;
+- **39 abonnés** à la newsletter.
+
+La troisième newsletter, envoyée le 1er octobre, a obtenu 29 vues et environ 45 % d’ouverture lors du relevé.
+
+Ces nombres ne doivent pas être additionnés pour fabriquer une audience totale. Une vue, une impression, un abonnement et une ouverture d’e-mail ne mesurent pas la même chose. Une même personne peut aussi nous suivre sur plusieurs plateformes.
+
+Nous avons reçu **une prise de contact depuis le site**, qui n’était pas qualifiée.
+
+Il nous manque encore une vue fiable du trafic depuis le 20 juin. Nos propres visites n’ont pas toujours été exclues, alors que nous consultons régulièrement le site pendant son développement. Les chiffres disponibles risquent donc d’être gonflés.
+
+Nous installerons un suivi plus complet lorsque les questions auxquelles il doit répondre seront suffisamment claires. Au départ, suivre chaque mouvement d’un visiteur peut donner une illusion de maîtrise sans aider à prendre une décision.
+
+La priorité est plus simple : savoir quel contenu amène une personne pertinente à découvrir Artinova, demander une démonstration ou participer à la bêta.
+
+---
+
+## Partenariats, médias et distribution
+
+Nous commençons également à travailler avec des personnes qui accompagnent déjà les artisans.
+
+Un juriste spécialisé fait partie de ces interlocuteurs. Nous échangeons aussi avec Gisèle Neau, assistante administrative, comme partenaire affiliée potentielle pour aider les entreprises à mieux structurer leur gestion.
+
+Nous allons progressivement contacter des médias locaux, des sites spécialisés et des communautés d’artisans. L’idée est de leur proposer un partenariat simple : apporter une information utile à leur audience et, lorsqu’une recommandation aboutit, partager une partie du revenu.
+
+Là encore, je ne présenterai pas une discussion comme un partenariat signé. Le prochain bilan distinguera les personnes approchées, les conversations engagées, les accords conclus et les clients réellement apportés.
+
+---
+
+## Ce que ces chiffres changent dans notre manière de construire
+
+Le principal enseignement de ce bilan n’est pas que nous avons fusionné 240 demandes de modification ou publié 44 contenus.
+
+C’est que nous savons beaucoup mieux mesurer ce que nous produisons que ce que cette production provoque.
+
+Nous savons compter les commits, les tests, les déploiements et les publications. Nous savons moins bien compter les appels, les conversations utiles, les utilisateurs actifs et les actions réellement effectuées dans le produit.
+
+Cette asymétrie est dangereuse. Elle peut donner l’impression d’avancer très vite tout en évitant la seule question qui compte : est-ce que des artisans utilisent Artinova et souhaitent continuer ?
+
+Nos prochains indicateurs devront donc se rapprocher de l’usage :
+
+- comptes invités et comptes réellement actifs ;
+- devis et factures créés ;
+- fonctionnalités utilisées ;
+- retours reçus et corrections livrées ;
+- démonstrations réalisées ;
+- premières conversions payantes.
+
+Nous publierons aussi une page présentant les grandes évolutions du produit. Elle ne détaillera pas chaque petite modification. Elle permettra de comprendre les blocs importants mis à disposition, leurs limites et ce qui reste en préparation.
+
+---
+
+## Le bilan de notre quatrième mois
+
+Au 5 octobre 2026, Artinova, c’est donc :
+
+- 0 € de revenu mensuel récurrent ;
+- au moins 2 508,77 € investis ;
+- une lettre d’intention en négociation pour un peu plus de 800 € annuels ;
+- 240 demandes de modification fusionnées ;
+- près de 1 300 commits ;
+- près de 14 000 tests automatisés réussis sur le code en production ;
+- 41 déploiements en préproduction ;
+- 4 mises en production ;
+- 8 grands blocs accessibles sur invitation ;
+- plus de 50 pistes dans notre CRM, encore à mieux qualifier ;
+- plus de 20 retours collectés ;
+- 44 publications répertoriées ;
+- 39 abonnés à la newsletter.
+
+Ce sont les chiffres d’une entreprise qui commence.
+
+Ils montrent beaucoup de construction, un début de distribution et encore très peu de validation économique.
+
+Le travail des prochains mois sera de réduire cet écart.
+
+Je continuerai à publier ces bilans, y compris lorsque les chiffres seront décevants. Ils m’aideront à prendre du recul, à mieux prioriser et, je l’espère, à partager quelque chose d’utile avec celles et ceux qui construisent eux aussi.
+
+Le prochain bilan devrait être moins centré sur ce que nous avons produit et davantage sur ce que les artisans ont réellement utilisé.
+`
+  }
 ];
 
 export const journalPosts = [...rawJournalPosts].sort(
