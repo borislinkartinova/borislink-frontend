@@ -61,7 +61,7 @@ export default function Journal() {
       {/* TABLE HEADER */}
       <div className="hidden md:grid grid-cols-[40px_minmax(0,1.6fr)_minmax(0,1fr)_140px_80px] items-start text-xs uppercase tracking-widest text-[var(--text-muted)] border-b border-[var(--border)] pb-3">
         <div>#</div>
-        <div>Titre</div>
+        <div className="pr-4">Titre</div>
         <div>Catégorie</div>
         <div>Date</div>
         <div className="text-right">Lecture</div>
@@ -100,7 +100,7 @@ function Row({ index, title, excerpt, category, date, read, slug }: any) {
         {index}
       </div>
 
-      <div className="min-w-0">
+      <div className="min-w-0 pr-4">
         <div className="text-[12.5px] font-semibold leading-snug break-words">
           <Link
             to={`/journal/${slug}`}
